@@ -1,0 +1,98 @@
+main{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content_section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 50px;
+    margin-top: 20px;
+    .content_texto{
+        width: 70%;    
+        font-size: 1.7em;    
+        padding: 50px 10px 50px 50px;
+        line-height: 1.5em; 
+        text-align: justify;
+        .iconos{
+            display: flex;
+            justify-content:left;
+            align-items: center;
+            gap: 20px;
+            margin-top: 20px;
+            position: relative;
+            
+            .redes{
+                font-size: 1.2em;
+                display: flex;
+                justify-content: left;
+                align-items: center;
+                margin-right: 20px;
+                position: relative;
+                transition: 0.4s;
+                box-shadow: 1px 2px 5px rgb(0, 0, 0, 0.5);
+                padding: 5px;
+                border-radius: 10px;
+                &:hover{
+                    transform:translateY(-7px);
+                }  
+                .icono{
+                    margin-right: 5px;
+                    align-items: center;
+                    position: relative;
+                
+                }
+            }
+        }
+
+    }
+    .cont_imagen{
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        margin-right: 50px;
+        margin-top: -50px;
+        overflow: hidden;
+        box-shadow: 2px 5px 8px rgb(0, 0, 0, 0.5);
+    }
+}
+    
+@media (max-width: 768px){
+    .main{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+    }
+    .content_section{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+        width: 100%;
+        .content_texto{
+            font-size: 1.3em;  
+            width: 100%;    
+            padding: 0;
+            margin-top: 20px;
+            line-height: 1.6em; 
+            text-align:start;
+                }
+            }
+        .cont_imagen{
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            margin-left: 50px;
+            width: 210px;
+            height: 210px;
+            
+        }
+    }
+    

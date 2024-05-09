@@ -1,0 +1,23 @@
+@import url(styles/header.css);
+@import url(styles/saludo.css);
+@import url(styles/sobre_mi.css);
+@import url(styles/skill.css);
+@import url(styles/hobbies.css);
+@import url(styles/formacion.css);
+@import url(styles/footer.css);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #f1f1f1;
+}
